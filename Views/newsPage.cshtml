@@ -1,0 +1,252 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Styles.css"/>
+    <script src="/scripts/Crito.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>News</title>
+</head>
+<body>
+    <!--Nav-->
+    <div class="info-bar">     
+        <p> +46 (8) 470 50| E-post: info@Crito.com | Sveavägen 31, 111 34 STOCKHOLM</p>
+
+       <i class="fa-brands fa-facebook"></i>
+       <i class="fa-brands fa-twitter"></i>
+       <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-linkedin"></i>
+   </div>
+   
+   <nav class="home-nav">
+       <div class="nav-left">         
+           <img src="/Images/logotype.svg" alt="Page logo">          
+           <a href="/Welcome">Home</a>
+           <a href="#Service">Service</a>
+           <a href="/News">News</a>
+           <a href="/Contacts">Contact</a>  
+       </div> 
+       <div class="nav-right">
+           <button class="btn-login"><i class="fa-solid fa-arrow-right-from-bracket"></i>Login</button>
+           </div>
+   </nav>
+
+   <div class="home-contact">
+    <p class="contact-title">Home | News</p>
+    <h2 class="contact-h2">News & Articles</h2>
+   </div>
+
+   <h2 class="news-header">Our News & Articles</h2>
+
+    <!--News Feed-->
+   <div class="news-grid">
+    <div class="container-news">
+        <div class="card-news">
+            <div class="date-box"><b>25 <br> Mar</b></div>
+            <div class="img">
+                <img class="news-img" src="/Images/linkedin-sales-solutions-Mis5fyJi7Q0-unsplash.jpg" alt="News Image 1">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Business</h5>
+                <p class="card-txt-article">How to Use Digitalization <br> In The Classroom</p>
+                <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container-news">
+        <div class="card-news">
+            <div class="date-box"><b>17 <br> Mar</b></div>
+            <div class="img">
+                <img class="news-img" src="/Images/emiliano-vittoriosi-vEN1bsdSjxM-unsplash.jpg" alt="News Image 2" style="height: 245px">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Business</h5>
+                <p class="card-txt-article">How To Implement Chat GPT <br> In Your Projects</p>
+                <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container-news">
+        <div class="card-news">
+            <div class="date-box"><b>13 <br> Mar</b></div>
+            <div class="img">
+                <img class="news-img" src="/Images/kobu-agency-ipARHaxETRk-unsplash.jpg" alt="News Image 3">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Business</h5>
+                <p class="card-txt-article">The Guide To Support<br> Modern CSS Design</p>
+                <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container-news">
+        <div class="card-news">
+            <div class="date-box"><b>12 <br> Mar</b></div>
+            <div class="img">
+                <img class="news-img" src="/Images/the-climate-reality-project-Hb6uWq0i4MI-unsplash.jpg" alt="News Image 4">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Business</h5>
+                <p class="card-txt-article">Why You need to implement The <br>Five S's</p>
+                <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container-news">
+        <div class="card-news">
+            <div class="date-box"><b>07<br> Mar</b></div>
+            <div class="img">
+                <img class="news-img" src="/Images/damir-kopezhanov-nC6CyrVBtkU-unsplash.jpg" alt="News Image 5" style="height: 250px;">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Business</h5>
+                <p class="card-txt-article">Get More Involved With Your <br> End Users</p>
+                <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container-news">
+        <div class="card-news">
+            <div class="date-box"><b>02 <br> Mar</b></div>
+            <div class="img">
+                <img class="news-img" src="/Images/annie-spratt-FSFfEQkd1sc-unsplash.jpg" alt="News Image 6">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Business</h5>
+                <p class="card-txt-article">Guided Tour Of Our New Head Office<br>In Stockholm</p>
+                <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container-news">
+        <div class="card-news">
+            <div class="date-box"><b>28<br> Feb</b></div>
+            <div class="img">
+                <img class="news-img" src="/Images/carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt="News Image 7">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Business</h5>
+                <p class="card-txt-article">Using Business Intelligence To Get <br> Insights Into Our Businesses</p>
+                <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container-news">
+        <div class="card-news">
+            <div class="date-box"><b>18<br> Feb</b></div>
+            <div class="img">
+                <img class="news-img" src="/Images/marek-levak-zANXcXyByos-unsplash.jpg" alt="News Image 8">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Business</h5>
+                <p class="card-txt-article">Apple Has Released New Products. Are <br> They Any Good?</p>
+                <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container-news">
+        <div class="card-news">
+            <div class="date-box"><b>11<br> Feb</b></div>
+            <div class="img">
+                <img class="news-img" src="/Images/oli-dale-xjSkI_seiZY-unsplash.jpg" alt="News Image 9">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Business</h5>
+                <p class="card-txt-article">How To Improve Teams And Get A <br> Better Result</p>
+                <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+        </div>
+    </div>  
+</div>
+
+    <!--Subscribe-->
+<section class="subscribe-section">
+    <h2 class="sub-title">Get News Updates By Signup</h2>
+        <form class="subscribe-form" id="subscribeForm">
+            <input type="email" id="emailInput" name="email" placeholder="Username@domain.com" autocomplete="email" required>
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+    </form>
+        <img class="wavy-lines-sub" src="/Images/background-wavy-lines.svg" alt="Wavy lines background">
+    </section>
+
+
+<script src="/scripts/Crito.js"></script>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-text">
+                <img class="footer-logo" src="/Images/logotype-white.svg">
+                <span>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat.</span>
+            </div>
+    
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h5>Company</h5>
+                    <ul>
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Works</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Help</h5>
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Delivery Details</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li>Free eBooks</li>
+                        <li>Development tutorial</li>
+                        <li>How to - Blog</li>
+                        <li>Youtube Playlist</li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section">
+                    <h5>Link</h5>
+                    <ul>
+                        <li>Free eBooks</li>
+                        <li>Development Tutorial</li>
+                        <li>How to - Blog</li>
+                        <li>Youtube Playlist</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p> Crito &copy; 2023 - Consulting Company Inc. All Rights Reserved.</p>
+            <div class="footer-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Styles.css" />
+    <script src="/scripts/Crito.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Min Webbplats</title>
+</head>
+<body>
+
+    <!--Nav-->
+
+    <div class="info-bar">     
+        <p> +46 (8) 470 50| E-post: info@Crito.com | Sveavägen 31, 111 34 STOCKHOLM</p>
+
+       <i class="fa-brands fa-facebook"></i>
+       <i class="fa-brands fa-twitter"></i>
+       <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-linkedin"></i>
+   </div>
+   
+   <nav class="home-nav">
+       <div class="nav-left">         
+           <img src="/Images/logotype.svg" alt="Page logo">          
+           <a href="/Welcome">Home</a>
+            <a href="#Service">Service</a>
+            <a href="/News">News</a>
+            <a href="/Contacts">Contact</a>   
+       </div> 
+       <div class="nav-right">
+           <button class="btn-login"><i class="fa-solid fa-arrow-right-from-bracket"></i>Login</button>
+           </div>
+   </nav>
+
+    <!--Contact-header-->
+
+    <div class="home-contact">
+    <p class="contact-title">Home | Contact</p>
+    <h2 class="contact-h2">Let's Connect</h2>
+   </div>
+
+    <!--Contact infos-->
+   <div class="contact-section">
+    <div class="container-contact" style="margin-right: 35px;">
+        <div class="card-contact">
+            <div class="img">
+                <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                <img class="contact-img" src="">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Visit us</h5>
+                <p class="card-txt">Sveavägen 31 <br> 111 34 STOCKHOLM</p>
+            </div>
+        </div>
+    </div>
+
+      <div class="container-contact">
+        <div class="card-contact">
+            <div class="img">
+               <span class="icon"> <i class="fa-solid fa-phone"></i></span>
+                <img class="contact-img" src="">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Call us</h5>
+                <p class="card-txt"> +46 (8) 121 470 50<br> +46 (8) 121 470 51</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-contact" style="margin-left: 35px;">
+        <div class="card-contact">
+            <div class="img">
+               <span class="icon"> <i class="fa-regular fa-envelope"></i></span>
+                <img class="contact-img" src="">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Email us</h5>
+                <p class="card-txt">info@crito.com<br> support@crito.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--Contact form-->
+
+    <div class="form-container">
+ <h2 class="contact-form-txt" style="font-weight: bolder; font-size: 40px; margin-bottom: 20px;">Leave us a message<br>for any information.</h2>
+    <form id="contactForm" action="/submit" method="post">
+        <div class="form-group">
+             <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Namn*" minlength="2" maxlength="50">
+            <span id="nameError" class="error"></span>
+        </div>
+         <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Email*" autocomplete="email">
+             <span id="emailError" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Your message*" minlength="10" maxlength="500"></textarea>
+            <span id="messageError" class="error"></span>
+         </div>
+         <div class="form-group">
+              <button type="submit">Skicka</button>
+        </div>
+     </form>
+ </div>
+
+    <!-- map and subscribe-->
+
+    <section class="map-stockholm">
+    <div class="maps">
+        <img src="/images/map2.svg" alt="map" />
+    </div>
+</section>
+
+    <section class="subscribe-section">
+    <h2 class="sub-title">Get News Updates By Signup</h2>
+        <form class="subscribe-form" id="subscribeForm">
+            <input type="email" id="emailInput" name="email" placeholder="Username@domain.com" autocomplete="email" required>
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+    </form>
+        <img class="wavy-lines-sub" src="/Images/background-wavy-lines.svg" alt="Wavy lines background">
+    </section>
+
+    <script src="/scripts/Crito.js"></script>
+
+    <!--Footer-->
+
+    <footer>
+    <div class="footer-content">
+        <div class="footer-logo-text">
+            <img class="footer-logo" src="/Images/logotype-white.svg">
+            <span>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat.</span>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-section">
+                <h5>Company</h5>
+                <ul>
+                    <li>About</li>
+                    <li>Features</li>
+                    <li>Works</li>
+                    <li>Career</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h5>Help</h5>
+                <ul>
+                    <li>Customer Support</li>
+                    <li>Delivery Details</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h5>Resources</h5>
+                <ul>
+                    <li>Free eBooks</li>
+                    <li>Development tutorial</li>
+                    <li>How to - Blog</li>
+                    <li>Youtube Playlist</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5>Link</h5>
+                <ul>
+                    <li>Free eBooks</li>
+                    <li>Development Tutorial</li>
+                    <li>How to - Blog</li>
+                    <li>Youtube Playlist</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p> Crito &copy; 2023 - Consulting Company Inc. All Rights Reserved.</p>
+        <div class="footer-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

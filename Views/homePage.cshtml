@@ -1,0 +1,539 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Styles.css" />
+    <script src="/scripts/Crito.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Min Webbplats</title>
+</head>
+<body>
+ 
+    <div class="info-bar">     
+         <p> +46 (8) 470 50| E-post: info@Crito.com | Sveavägen 31, 111 34 STOCKHOLM</p>
+
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    
+    <nav class="home-nav">
+        <div class="nav-left">         
+            <img class="Crito-logo" src="/Images/logotype.svg" alt="Page logo">          
+            <a href="/Welcome">Home</a>
+            <a href="#Service">Service</a>
+            <a href="/News">News</a>
+            <a href="/Contacts">Contact</a>  
+        </div> 
+
+        <div class="nav-right">
+            <button class="btn-login"><i class="fa-solid fa-arrow-right-from-bracket"></i>Login</button>
+            </div>
+    </nav>
+
+
+    <!--Solutions-->
+
+    <div class="solution-section">
+        <div class="text-content">
+            <h2 class="consult-header" style="font-size: 80px;">We provide The <br>Best business <br> solutions</h2>
+            <p class="consult-text">Establish your vision and value proposition and turn them into <br> prototypes</p>
+            <div class="buttons-solution">
+            <button class="consult-btn">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>Get Consulting
+            </button>
+            <button class="Learn-btn">
+                 <i class="fa-solid fa-arrow-right-to-bracket"></i>Learn More
+            </button>
+            </div>
+        </div>
+        <img src="/Images/showcase-image.svg" alt="Showcase Image">
+    </div>
+
+    <!--Sponsors img-->
+
+    <div class="sponsor" style="margin-top: 60px;">
+        <img src="/Images/paperz.svg">
+        <img src="/Images/dorfus.svg">
+        <img src="/Images/martino.svg">
+        <img src="/Images/square.svg">
+        <img src="/Images/gobona.svg">
+    </div>
+
+    <!--Features box-->
+
+     <div class="features-box">
+        <div class="left-section" style="display: inline;"> 
+            <span class="features-head">Features</span>
+            <h4 class="feature-txt">Our Accounting is<br> trusted by thousand<br> of companies</h4>
+            <button class="features-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i>Learn More</button>
+        </div>
+
+        <div class="right-section">
+            <div class="right-item">
+                <i class="fa-regular fa-handshake"></i>
+                <h5 class="ba-header">Business Advice</h5>
+                <span class="ba-txt">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</span>
+            </div>
+    
+            <div class="right-item">
+                <i class="fa-regular fa-lightbulb"></i>
+                <h5 class="sb-header">Startup Business</h5>
+                <span class="sb-txt">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</span>
+            </div>
+    
+            <div class="right-item">
+                <i class="fa-solid fa-people-arrows"></i>
+                <h5 class="fadvice-header">Financial Advice</h5>
+                <span class="fa-txt">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</span>
+            </div>
+    
+            <div class="right-item">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <h5 class="rm-header">Risk Management</h5>
+                <span class="rm-txt">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</span>
+            </div>
+        </div>
+    </div>
+    
+    <!--About the company-->
+
+    <div class="about-company">
+         <div class="left-section">
+            <div class="image-container">
+                <img class="CEO-brown" src="/Images/daria-pimkina-tYaccl19A3Q-unsplash.jpg" alt="CEO">
+                 <div class="ceo-info-box">
+                    <p class="ceo-title"><b>Samantha Brown</b>,<span class="title-txt"><b>Founder</b></span></p>
+                    <span class="ceo-txt">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, </span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="right-section">
+             <span class="about-company-title" style="margin-left: 100px;">About Company</span>
+            <h2 class="about-header" style="font-size: 40px; margin-top: 35px; margin-left: 60px;">We Are Business <br> Consulting & Credit <br>Repair Experts</h2>
+            <p class="about-text" style="margin-left: 60px; color: #6d6d6d;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+             <p class="about-text2" style="margin-left: 60px; color: #6d6d6d;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <div class="button-container" style="margin-left: 60px;">
+                <button class="about-more-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i>Learn More</button>
+                <i class="fa-regular fa-circle-play" style="margin-bottom: 20px;"><span>Intro Video</span></i>
+             </div>
+         </div>
+    </div>
+
+    <!--Our services-->
+
+    <div class="our-services">
+        <p class="service-title">Our Services</p>
+        <h2 class="service-header">We Provide The Best <br>Service For Consulting</h2>
+    
+    <div class="service-cards">
+        <div class="card">
+            <h3 class="card-title">Business Advice</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam. Metus magnis nostra id tristique fusce sit dictum vitae ante. Cras consectetur id lacinia viverra aptent sociosqu bibendum. Posuere orci ex erat himenaeos turpis sociosqu lorem scelerisque.</p>
+            <button class="card-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Startup  Business</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam. Metus magnis nostra id tristique fusce sit dictum vitae ante. Cras consectetur id lacinia viverra aptent sociosqu bibendum. Posuere orci ex erat himenaeos turpis sociosqu lorem scelerisque.</p>
+            <button class="card-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Financial Advice</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam. Metus magnis nostra id tristique fusce sit dictum vitae ante. Cras consectetur id lacinia viverra aptent sociosqu bibendum. Posuere orci ex erat himenaeos turpis sociosqu lorem scelerisque.</p>
+            <button class="card-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Risk Management</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam. Metus magnis nostra id tristique fusce sit dictum vitae ante. Cras consectetur id lacinia viverra aptent sociosqu bibendum. Posuere orci ex erat himenaeos turpis sociosqu lorem scelerisque.</p>
+            <button class="card-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <button class="service-btn">Browse Services</button>
+</div>
+
+<!--Why choose us-->
+
+<div class="choose-section">
+    <div class="text-section">
+        <p class="whyus-title">Why Choose Us</p>
+        <h2 class="choose-header">Why We Are The <br> Best Business <br> Consulting Agency</h2>
+
+        <div class="text-item">
+            <div class="icon-container">
+                <i class="fas fa-cogs"></i>
+            </div>
+            <div class="text-content">
+            <p class="pe-head" style="font-weight: bold; font-size: 18px;">Process Excellence</p>
+            <span class="pe-txt">Lorem ipsum dolor sit amet, consectetur</span>
+        </div>
+        </div>
+
+        <div class="text-item">
+            <div class="icon-container">
+                <i class="fas fa-chart-line"></i>
+            </div>
+        <div class="text-content">
+            <p class="sp-head"style="font-weight: bold; font-size: 18px;">Strategic Planning</p>
+            <span class="sp-txt">Lorem ipsum dolor sit amet, consectetur</span>
+        </div>
+        </div>
+
+        <div class="text-item">
+            <div class="icon-container">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="text-content">
+            <p class="ed-head" style="font-weight: bold; font-size: 18px;">Experience Design</p>
+            <span class="ed-txt">Lorem ipsum dolor sit amet, consectetur</span>
+        </div>
+        </div>
+
+        <div class="text-item">
+            <div class="icon-container">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="text-content">
+            <p class="ai-head" style="font-weight: bold; font-size: 18px;">Innovation</p>
+            <span class="ai-txt">Lorem ipsum dolor sit amet, consectetur</span>
+        </div>
+        </div>
+    </div>
+    <div class="whyus-container" style="position: relative; width: max-content;">
+        <div class="whyus-background" style="position: absolute; top: 0; left: 0; width: 700px; height: 200px; background-color: #F0EFE9; z-index: 1; display:flex; margin-top: 100px;">
+        </div>
+        <img class="whyus-img" src="/Images/amy-hirschi-K0c8ko3e6AA-unsplash.jpg" alt="Business Consulting" style="position: relative; z-index: 2; height: 300px;">
+    </div>
+</div>
+
+    <!--Case studies-->
+
+    <div class="case-studies">
+    <span class="case-studies-title">Project & Case Studies</span>
+    <h2 class="case-studies-header" style="font-size: 38px;">Let's Look at Our Global Projects</h2>
+
+    <section class="collection-cards">
+        <div class="grid-container">
+            <div class="card-home">
+                <div class="img">
+                    <img class="projects-img" src="/Images/adeolu-eletu-E7RLgUjjazc-unsplash.jpg" alt="Project Image">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title-case">Grow your business</h5>
+                    <p class="card-txt"></p>
+                    <button class="case-studies-btn">Read More</button>
+                </div>
+            </div>
+
+            <div class="card-home">
+                <div class="img">
+                    <img class="projects-img" src="/Images/marek-levak-zANXcXyByos-unsplash.jpg" alt="Project Image">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title-case">Why your client needs a responsive website</h5>
+                    <p class="card-txt"></p>
+                    <button class="case-studies-btn">Read More</button>
+                </div>
+            </div>
+
+            <div class="card-home">
+                <div class="img">
+                    <img class="projects-img" src="/Images/oli-dale-xjSkI_seiZY-unsplash.jpg" alt="Project Image">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title-case">Educate your employees to get better results</h5>
+                    <p class="card-txt"></p>
+                    <button class="case-studies-btn">Read More</button>
+                </div>
+            </div>
+
+            <div class="card-home">
+                <div class="img">
+                    <img class="projects-img" src="/Images/carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt="Project Image">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title-case">Business Insights is an important piece of your business</h5>
+                    <p class="card-txt"></p>
+                    <button class="case-studies-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+        <button class="projects-btn">
+            All Recent Projects
+        </button>
+    </section>
+</div>
+
+    <!--The team-->
+
+    <div class="the-team">
+        <span class="team-title">Meet Our Team</span>
+        <h2 class="team-h2" style="float: left; margin-left: 220px; margin-top: 50px; font-size: 35px;">Experience Team Memebers</h2> <button class="team-btn" style="float: right; margin-right: 220px;">Browse Team</button>
+
+
+        <div class="team-section">
+            <div class="container-team">
+                <div class="card-team">
+                    <div class="img">
+                        <img class="team-img" src="/Images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg" alt="Kristine Palmer">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Kristine Palmer</h5>
+                        <p class="card-txt">Chief Operation Officer</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container-team">
+                <div class="card-team">
+                    <div class="img">
+                        <img class="team-img" src="/Images/itay-verchik-6ZKGBzrDd3I-unsplash.jpg" alt="Mark Aubri">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mark Aubri</h5>
+                        <p class="card-txt">Senior Consultant</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container-team">
+                <div class="card-team">
+                    <div class="img">
+                        <img class="team-img" src="/Images/christina-wocintechchat-com-Zpzf7TLj_gA-unsplash.jpg" alt="Kimberly Hansen">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Kimberly Hansen</h5>
+                        <p class="card-txt">Senior Consultant</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container-team">
+                <div class="card-team" style="height: 490px;">
+                    <div class="img">
+                        <img class="team-img" src="/Images/the-connected-narrative-N8lRH2uxih4-unsplash.jpg" alt="Justin Willoman" style="height: 380px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Justin Willoman</h5>
+                        <p class="card-txt">Senior Tech Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="dots-team">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!--Testamonial-->
+
+        <div class="Testimonial-container">
+    <div class="Testimonial-section">
+        <span class="testimonial-title">Testimonial</span>
+        <h2 class="testimonial-txt" style="font-size: 40px;">What Our Client Says</h2>
+
+        <div class="testimonial-content">
+            <div class="testimonial-item">
+                <div class="star-rating" style="color: #ff886a; margin-bottom: 25px;">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+                <span class="lorem-testimonial1" style="margin-bottom: 25px;">Lorem ipsum odor amet, consectetuer <br>adipiscing elit. Lectus netus conubia vel <br>tristique molestie cras mollis. <br>Tellus efficitur iaculis ultrices<br> morbi vel faucibus suscipit. <br>Sociosqu malesuada elit varius nisi<br> mattis lacus scelerisque nisi.</span>
+                <p>Cassandra Warren</p>
+                <span style= color:#FB9072;>Business Manager, Dorfus</span>
+                <img class="testimonial-img" 
+                 src="/Images/vince-veras-AJIqZDAUD7A-unsplash.jpg" alt="Cassandra Warren"           
+                 style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 1.5px solid #white;">
+            </div>
+            <div class="testimonial-item">
+                <div class="star-rating" style="color: #ff886a; margin-bottom: 25px;">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <span class="lorem-testimonial1" style="margin-bottom: 25px;">Lorem ipsum odor amet, consectetuer <br>adipiscing elit. Lectus netus conubia vel <br>tristique molestie cras mollis. <br>Tellus efficitur iaculis ultrices<br> morbi vel faucibus suscipit. <br>Sociosqu malesuada elit varius nisi<br> mattis lacus scelerisque nisi.</span>
+                <p>Amanda Tulling</p>
+                <span style= color:#FB9072;>Senior Developer, Square</span>
+                <img class="testimonial-img" 
+                 src="/Images/christina-wocintechchat-com-PlikkWB79qs-unsplash.jpg" alt="Amanda Tulling"           
+                 style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 1.5px solid #white;">
+            </div>
+            <div class="testimonial-item">
+                <div class="star-rating" style="color: #ff886a; margin-bottom: 25px;">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <span class="lorem-testimonial1" style="margin-bottom: 25px;">Lorem ipsum odor amet, consectetuer <br>adipiscing elit. Lectus netus conubia vel <br>tristique molestie cras mollis. <br>Tellus efficitur iaculis ultrices<br> morbi vel faucibus suscipit. <br>Sociosqu malesuada elit varius nisi<br> mattis lacus scelerisque nisi.</span>
+                <p>Jack McDogglas</p>
+                <span style= color:#FB9072;>Key Account Manager, Gabona</span>
+                <img class="testimonial-img"
+                 src="/Images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="Jack McDogglas"
+                 style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 1.5px solid #white;">
+            </div>
+        </div>
+
+        <button class="review-btn">All Reviews</button>
+    </div>
+</div>
+    </div>
+
+
+    <!--Homepage articles-->
+
+    <div class="article-section">
+        <span class="article-title" style="color: #ff886a; font-size: 17px; display: flex; margin-left: 350px;">Article & News</span>
+        <h2 class="article-h2" style="font-size: 40px; display: flex; margin-left: 350px;">Get Every Single Article & News</h2>
+        <a href="/NewsDetails" class="browse-article-btn"style="margin-top: 20px; background-color: #fff; color: #000; border: 2px solid #000; border-radius: 40px; padding: 10px 20px; float: right; margin-right: 525px; margin-bottom:20px; text-decoration: none;">
+        Browse Article
+        </a>
+    
+        <div class="articles-container">
+            <div class="container-article">
+                <div class="card-article">
+                    <div class="img">
+                        <img class="article-img" src="/Images/linkedin-sales-solutions-Mis5fyJi7Q0-unsplash.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Business</h5>
+                        <p class="card-txt-article">How to Use Digitalization <br> In The Classroom</p>
+                        <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    </div>
+                </div>
+            </div>  
+    
+            <div class="container-article">
+                <div class="card-article" style="height: 450px;">
+                    <div class="img">
+                        <img class="article-img" src="/Images/emiliano-vittoriosi-vEN1bsdSjxM-unsplash.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Business</h5>
+                        <p class="card-txt-article">How To Implement Chat GPT <br> In Your Projects</p>
+                        <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    </div>
+                </div>
+            </div>  
+    
+            <div class="container-article">
+                <div class="card-article">
+                    <div class="img">
+                        <img class="article-img" src="/Images/kobu-agency-ipARHaxETRk-unsplash.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Business</h5>
+                        <p class="card-txt-article">The Guide To Support<br> Modern CSS Design</p>
+                        <span class="card-info-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    </div>
+                </div>
+            </div>  
+        </div>  
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <!--Subscribe-->
+
+     <section class="subscribe-section">
+        <h2 class="sub-title">Get News Updates By Signup</h2>
+            <form class="subscribe-form" id="subscribeForm">
+                <input type="email" id="emailInput" name="email" placeholder="Username@domain.com" autocomplete="email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+            <img class="wavy-lines-sub" src="/Images/background-wavy-lines.svg" alt="Wavy lines background">
+        </section>
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-text">
+                <img class="footer-logo" src="/Images/logotype-white.svg">
+                <span>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat.</span>
+            </div>
+    
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h5>Company</h5>
+                    <ul>
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Works</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Help</h5>
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Delivery Details</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li>Free eBooks</li>
+                        <li>Development tutorial</li>
+                        <li>How to - Blog</li>
+                        <li>Youtube Playlist</li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section">
+                    <h5>Link</h5>
+                    <ul>
+                        <li>Free eBooks</li>
+                        <li>Development Tutorial</li>
+                        <li>How to - Blog</li>
+                        <li>Youtube Playlist</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p> Crito &copy; 2023 - Consulting Company Inc. All Rights Reserved.</p>
+            <div class="footer-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/scripts/Crito.js"></script>
+
+</body>
+</html>
